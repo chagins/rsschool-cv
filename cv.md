@@ -1,6 +1,8 @@
 # Yaroslav Chagin
 ## FRONTEND DEVELOPER
-[contacts](#Contacts) | [about me](#about-me) | [hard-skills](#hard-skills) | [soft-skills](#soft-skills) | [education](#education-and-courses)
+
+[contacts](#Contacts) | [about me](#about-me) | [hard-skills](#hard-skills) | [soft-skills](#soft-skills) | [education](#education-and-courses) | [code example](#code-example) |
+
 ---
 ### Contacts
 
@@ -59,4 +61,39 @@ My goal is to become a professional front-end developer.
   - [WEB developer 2021](https://www.udemy.com/course/webdeveloper/) (in progress)
   - [Oracle Database 12c SQL Certified Associate 1Z0-071](https://www.udemy.com/course/oracle-database-12c-sql-certified-associate-1z0-071/)
 
+---
+### Code Example
+
+```JavaScript
+// Roman to Integer
+// https://leetcode.com/problems/roman-to-integer/
+
+/**
+ * @param {string} s
+ * @return {number}
+ */
+let romanToInt = function (s) {
+
+  const ROMAN_DICT = new Map([
+    ["I", 1],
+    ["V", 5],
+    ["X", 10],
+    ["L", 50],
+    ["C", 100],
+    ["D", 500],
+    ["M", 1000],
+  ]);
+
+  let date = 0;
+  for (let c = 0; c < s.length; c++) {
+    date +=
+      c < s.length - 1 && ROMAN_DICT.get(s[c]) < ROMAN_DICT.get(s[c + 1])
+        ? -ROMAN_DICT.get(s[c])
+        : ROMAN_DICT.get(s[c]);
+  }
+
+  return date;
+
+};
+```
 ---

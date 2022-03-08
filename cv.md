@@ -1,8 +1,8 @@
 # Yaroslav Chagin
 ## FRONTEND DEVELOPER
-[contacts](#Contacts) | [about me](#about-me) | [hard-skills](#hard-skills) | [soft-skills](#soft-skills)
+[contacts](#Contacts) | [about me](#about-me) | [hard-skills](#hard-skills) | [soft-skills](#soft-skills) | [education](#education-and-courses)
 ---
-### Contacts:
+### Contacts
 
 - **Phone:** [+7 982 472 70 83](tel:+79824727083)
 
@@ -13,7 +13,7 @@
 - **Telegram:** [@chagins](https://t.me/chagins)
 
 ---
-### About me:
+### About me
 
 Hello! I'm 34 years old. I am very interested in information technology.
 
@@ -24,7 +24,7 @@ In the last three months, I discovered web development for myself. I was charmed
 My goal is to become a professional front-end developer.
 
 ---
-### Hard Skills:
+### Hard Skills
 
 - HTML
 - CSS
@@ -34,12 +34,29 @@ My goal is to become a professional front-end developer.
 - JIRA
 
 ---
-### Soft Skills:
+### Soft Skills
 
 - Positive attitude
 - Curiosity
 - Willingness to learn
 - Teamwork
 - Good communication
+
+---
+### Education and courses
+
+- **Perm National Research Polytechnic University**
+  - Bachelor Program in Informatics and Computer Engineering
+- **Harvard**
+  - [CS50](https://javarush.ru/quests/QUEST_HARVARD_CS50)
+- **Code Basics**
+  - [JavaScript for beginners](https://code-basics.com/languages/javascript)
+  - [HTML for beginners](https://code-basics.com/languages/html)
+  - [CSS for beginners](https://code-basics.com/languages/css)
+- **RS School**
+  - [JavaScript/Front-end. Stage 0 (2022)](https://rs.school/js-stage0/)
+- **Udemy**
+  - [WEB developer 2021](https://www.udemy.com/course/webdeveloper/) (in progress)
+  - [Oracle Database 12c SQL Certified Associate 1Z0-071](https://www.udemy.com/course/oracle-database-12c-sql-certified-associate-1z0-071/)
 
 ---

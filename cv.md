@@ -1,6 +1,6 @@
 # Yaroslav Chagin
 ## FRONTEND DEVELOPER
-[contacts](#Contacts) | [about me](#about-me)
+[contacts](#Contacts) | [about me](#about-me) | [hard-skills](#hard-skills) | [soft-skills](#soft-skills)
 ---
 ### Contacts:
 
@@ -22,5 +22,24 @@ After graduating from the Perm National Research Polytechnic University, I worke
 In the last three months, I discovered web development for myself. I was charmed by the possibility to transition from design to website or application and create something from scratch.
 
 My goal is to become a professional front-end developer.
+
+---
+### Hard Skills:
+
+- HTML
+- CSS
+- JavaScript
+- GIT
+- SQL
+- JIRA
+
+---
+### Soft Skills:
+
+- Positive attitude
+- Curiosity
+- Willingness to learn
+- Teamwork
+- Good communication
 
 ---

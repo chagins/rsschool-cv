@@ -1,7 +1,7 @@
 # Yaroslav Chagin
 ## FRONTEND DEVELOPER
 
-[contacts](#Contacts) | [about me](#about-me) | [hard-skills](#hard-skills) | [soft-skills](#soft-skills) | [education](#education-and-courses) | [code example](#code-example) |
+[:point_right: contacts](#contacts) | [:point_right: about me](#about-me) | [:point_right: hard-skills](#hard-skills) | [:point_right: soft-skills](#soft-skills) | [:point_right: education](#education-and-courses) | [:point_right: code example](#code-example) | [:point_right: language](#language)
 
 ---
 ### Contacts
@@ -97,3 +97,9 @@ let romanToInt = function (s) {
 };
 ```
 ---
+### Language:
+
+- Russian (native speaker)
+- English A1
+
+[:point_up::point_up::point_up:](#yaroslav-chagin)

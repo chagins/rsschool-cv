@@ -395,3 +395,46 @@ li.contact-linkedin {
   color: var(--dark-font-color);
   list-style: circle;
 }
+
+.projects-wrapper {
+  margin-top: 36px;
+  display: flex;
+  width: 700px;
+  overflow-x: auto;
+}
+
+.project {
+  position: relative;
+  /* margin: 3px 3px 3px 3px; */
+  margin-left: 20px;
+  border: 3px solid var(--dark-color);
+  filter: grayscale(100%);
+  transition: filter 1s ease-out, border 0.5s ease-out;
+}
+
+.project:hover{
+  filter: grayscale(0%);
+  border: 3px solid var(--blue-color);
+}
+
+.project .open {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  padding: 5px 10px;
+  font-family: "Roboto Condensed";
+  font-weight: normal;
+  font-size: 20px;
+  color: var(--light-color);
+  transform: translate(-50%, -50%);
+  background-color: var(--dark-color);
+  cursor: pointer;
+  user-select: none;
+  transition: opacity 0.3s ease-out;
+  border-radius: 10px;
+  opacity: 0;
+}
+
+.project:hover .open {
+  opacity: 0.8;
+}

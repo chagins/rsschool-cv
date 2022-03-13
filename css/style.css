@@ -6,7 +6,7 @@
   --blue-color: #29b6f6ff;
   --outline-color: #676771;
   --dark-font-color: #3C3A3D;
-  --left-side-size: 300px;
+  --left-side-size: 320px;
 }
 
 *{
@@ -55,7 +55,6 @@ body {
 .container{
   margin: 0 auto;
   max-width: 1024px;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -69,10 +68,10 @@ body {
 .header{
   padding: 0 20px;
   width: 100%;
-  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex: 1 1 80px;
   background-color: var(--dark-color);
   border-radius: 10px 10px 0 0;
 }
@@ -147,13 +146,19 @@ body {
   }
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
 .hero-section {
   display: flex;
-  height: 400px;
+  flex-wrap: wrap;
 }
 
 .photo-wrapper {
-  padding: 15px;
+  padding: 10px 20px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -169,8 +174,7 @@ body {
 
 .contact-line {
   position: relative;
-  margin: 0 auto;
-  width: 300px;
+  width: 100%;
   height: 3px;
   background-color: var(--light-color);
 }
@@ -189,7 +193,8 @@ body {
 }
 
 .title-wrapper { 
-  padding: 50px 15px 15px 50px;
+  height: 400px;
+  padding: 50px 10px 10px 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -227,6 +232,80 @@ h1 {
 }
 
 .splitter-line {
-  flex: 0 1 3px;
+  flex: 0 1 5px;
   background-color: var(--dark-color);
 }
+
+.left-side {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  width: var(--left-side-size);
+  background-color: var(--dark-color);
+}
+
+.header-left {
+  margin-bottom: 30px;
+}
+
+.header-title {
+  width: fit-content;
+  height: fit-content;
+  padding: 0px 10px;
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 35px;
+  color: var(--dark-color);
+  background-color: var(--light-color);
+  text-transform: uppercase;
+}
+
+.header-line {
+  bottom: 0px;
+  width: 100%;
+  height: 3px;
+  background-color: var(--light-color);
+}
+
+.contacts-wrapper > li {
+  margin: 25px 0;
+  padding-left: 39px;
+  background-size: 30px;
+  background-repeat: no-repeat;
+}
+
+.contact-link {
+  font-family: "Roboto";
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--light-color);
+  transition: color 0.25s ease-out;
+}
+
+.contact-link:hover {
+  color: var(--blue-color);
+}
+
+li.contact-phone {
+  background-image: url("../assets/svg/icon_phone.svg");
+}
+
+li.contact-mail {
+  background-image: url("../assets/svg/icon_mail.svg");
+}
+
+li.contact-discord {
+  background-image: url("../assets/svg/icon_discord.svg");
+}
+
+li.contact-telegram {
+  background-image: url("../assets/svg/icon_telegram.svg");
+}
+
+li.contact-linkedin {
+  background-image: url("../assets/svg/icon-linkedin.svg");
+}
+

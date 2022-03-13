@@ -27,7 +27,6 @@ a:focus,a:active{outline: none;}
 nav,footer,header,main,aside{display: block;}
 
 html,body{
-	height: 100%;
 	width: 100%;
 	font-size: 100%;
 	line-height: 1;
@@ -241,6 +240,7 @@ h1 {
 
 .section-container {
   display: flex;
+  flex-wrap: wrap;
   gap: 50px;
 }
 
@@ -347,6 +347,7 @@ li.contact-linkedin {
   display: flex;
   flex-direction: column;
   gap: 35px;
+  min-width: var(--left-side-width);
   background-color: var(--light-color);
 }
 
@@ -440,4 +441,33 @@ li.contact-linkedin {
 
 .code-section {
   font-size: 14px;
+}
+
+.footer {
+  padding: 0 20px;
+  height: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  font-family: 'Roboto';
+  font-weight: normal;
+  font-size: 30px;
+  color: var(--light-color);
+  background-color: var(--dark-color);
+  border-radius: 0 0 10px 10px;
+}
+
+.footer > a:hover {
+  transition: filter 0.2s ease-out;
+  filter: invert(39%) sepia(98%) saturate(1000%) hue-rotate(167deg) 
+    brightness(98%) contrast(96%);
+}
+
+.footer a:first-child {
+  justify-self: start;
+}
+
+.footer a:last-child {
+  justify-self: end;
 }

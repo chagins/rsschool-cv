@@ -240,6 +240,7 @@ h1 {
   padding: 40px 20px;
   display: flex;
   flex-direction: column;
+  gap: 20px;
   width: var(--left-side-size);
   background-color: var(--dark-color);
 }
@@ -309,3 +310,13 @@ li.contact-linkedin {
   background-image: url("../assets/svg/icon-linkedin.svg");
 }
 
+.skills-wrapper > li {
+  margin: 25px 0;
+  padding-left: 39px;
+  font-family: "Roboto";
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--light-color);
+  background: url("../assets/svg/icon_check.svg") 0 0 / 30px no-repeat;
+} 

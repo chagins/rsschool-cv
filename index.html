@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="icon" href="./assets/favicon.ico">
   <link rel="stylesheet" href="./css/fonts.css">
+  <link rel="stylesheet" href="./css/theme.css">
   <link rel="stylesheet" href="./css/style.css">
   <title>Yaroslav Chagin CV</title>
 </head>
@@ -166,31 +167,31 @@
               <h3>projects</h3>
             </div>
             <div class="projects-wrapper">
-              <div class="project-cv project" title="cv">
+              <div class="project" title="cv">
                 <a href="https://chagins.github.io/rsschool-cv/">
                   <img src="./assets/img/project-cv.jpg" alt="project-cv" width="220" height="220">
                 </a>
                 <p class="open">open</p>
               </div>
-              <div class="project-portfolio project" title="photographer's portfolio">
+              <div class="project" title="photographer's portfolio">
                 <a href="https://chagins.github.io/rs-school_stage0/portfolio/">
                   <img src="./assets/img/project-portfolio.jpg" alt="project-portfolio" width="220" height="220">
                 </a>
                 <p class="open">open</p>
               </div>
-              <div class="project-video project" title="custom video player">
+              <div class="project" title="custom video player">
                 <a href="https://chagins.github.io/rs-school_stage0/custom-video/">
                   <img src="./assets/img/project-video.jpg" alt="project-video" width="220" height="220">
                 </a>
                 <p class="open">open</p>
               </div>
-              <div class="project-movie project" title="movie app">
+              <div class="project" title="movie app">
                 <a href="https://chagins.github.io/rs-school_stage0/movie-app/">
                   <img src="./assets/img/project-movie.jpg" alt="project-movie" width="220" height="220">
                 </a>
                 <p class="open">open</p>
               </div>
-              <div class="project-game project" title="memory game">
+              <div class="project" title="memory game">
                 <a href="https://chagins.github.io/rs-school_stage0/memory-game/">
                   <img src="./assets/img/project-game.jpg" alt="project-game" width="220" height="220">
                 </a>
@@ -198,13 +199,67 @@
               </div>
             </div>
           </section>
+          <section class="code-section" id="code-section">
+            <div class="header-right">
+              <h3>code example</h3>
+            </div>
+            <pre>
+              <code data-language = "javascript">    
+// Roman to Integer
+// https://leetcode.com/problems/roman-to-integer/
+/**
+  * @param {string} s
+  * @return {number}
+  */
+let romanToInt = function (s) {
+  const ROMAN = new Map([
+    ["I", 1],
+    ["V", 5],
+    ["X", 10],
+    ["L", 50],
+    ["C", 100],
+    ["D", 500],
+    ["M", 1000],
+  ]);
+
+  let date = 0;
+  for (let i = 0; i &lt; s.length; i++) {
+
+    const currentNum = ROMAN.get(s[i]);
+    const nextNum = ROMAN.get(s[i + 1]);
+
+    date += 
+      (i &lt; s.length - 1 && currentNum &lt; nextNum) 
+      ? -currentNum 
+      : currentNum;
+  }
+
+  return date;
+};                
+              </code>
+            </pre>
+          </section>
         </div>
       </div>
-      
     </main>
     <footer class="footer">
-
+      <div class="footer-container">
+        <a href="https://rs.school/js/"> 
+          <img src="./assets/svg/rs.school.svg" 
+            alt="rsschool-logo"
+            height=59 
+            width=143>
+        </a>
+        <p>2022</p>
+        <a href="https://github.com/chagins"> 
+          <img src="./assets/svg/github.svg" 
+            alt="github-logo"
+            height=50 
+            width=50>
+        </a>
+      </div>
     </footer>
   </div>
+  <script src="./js/rainbow-custom.min.js"></script>
 </body>
 </html>

@@ -33,6 +33,7 @@ html,body{
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
 }
 input,button,textarea{font-family:inherit;}
 
@@ -236,12 +237,17 @@ h1 {
   background-color: var(--dark-color);
 }
 
+.section-container {
+  display: flex;
+  gap: 50px;
+}
+
 .left-side {
   padding: 40px 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: var(--left-side-size);
+  min-width: var(--left-side-size);
   background-color: var(--dark-color);
 }
 
@@ -258,7 +264,7 @@ h1 {
   font-weight: bold;
   font-size: 30px;
   line-height: 35px;
-  color: var(--dark-color);
+  color: var(--dark-font-colorr);
   background-color: var(--light-color);
   text-transform: uppercase;
 }
@@ -330,4 +336,43 @@ li.contact-linkedin {
   line-height: 30px;
   color: var(--light-color);
   background: url("../assets/svg/icon_check.svg") 0 0 / 30px no-repeat;
-} 
+}
+
+.right-side {
+  padding: 40px 0;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--light-color);
+}
+
+.header-right {
+  margin-bottom: 30px;
+  width: fit-content;
+  height: fit-content;
+  padding: 0px 10px;
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 38px;
+  color: var(--light-color);
+  background-color: var(--dark-color);
+  text-transform: uppercase;
+}
+
+.about-section > p {
+  margin-top: 20px;
+  font-family: "Roboto Condensed";
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--dark-font-color);
+}
+
+.about-section span {
+  font-weight: bold;
+}
+
+

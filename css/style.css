@@ -234,7 +234,7 @@ h1 {
 
 .splitter-line {
   flex: 0 1 5px;
-  background-color: var(--dark-color);
+  background-color: var(--dark-font-color);
 }
 
 .section-container {
@@ -343,7 +343,7 @@ li.contact-linkedin {
   padding-right: 20px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   background-color: var(--light-color);
 }
 
@@ -358,7 +358,7 @@ li.contact-linkedin {
   font-size: 30px;
   line-height: 38px;
   color: var(--light-color);
-  background-color: var(--dark-color);
+  background-color: var(--dark-font-color);
   text-transform: uppercase;
 }
 
@@ -375,4 +375,23 @@ li.contact-linkedin {
   font-weight: bold;
 }
 
+.education-section li {
+  margin-left: 25px;
+  margin-top: 10px;
+  font-family: "Roboto Condensed";
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--dark-font-color);
+  list-style: square;
+}
 
+.education-section .sub-li {
+  margin-left: 25px;
+  list-style-type: none;
+  font-family: "Roboto Condensed";
+  font-weight: normal;
+  font-size: 20px;
+  color: var(--dark-font-color);
+  list-style: circle;
+}

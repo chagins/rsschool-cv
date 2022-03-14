@@ -220,7 +220,6 @@ body {
 
 .hero-section {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .photo-wrapper {
@@ -289,11 +288,11 @@ h1 {
   text-transform: uppercase;
 }
 
-.title-wrapper h2 {
+.title-wrapper h3 {
   font-family: "Roboto Condensed";
   font-weight: 300;
   font-size: 45px;
-  line-height: 45px;
+  line-height: 50px;
   color: var(--dark-font-color);
   text-transform: uppercase;
 }
@@ -305,7 +304,6 @@ h1 {
 
 .section-container {
   display: flex;
-  flex-wrap: wrap;
   gap: 50px;
 }
 
@@ -494,7 +492,6 @@ li.contact-linkedin {
   transform: translate(-50%, -50%);
   background-color: var(--dark-color);
   cursor: pointer;
-  user-select: none;
   transition: opacity 1s;
   border-radius: 10px;
   opacity: 0;
@@ -511,10 +508,12 @@ li.contact-linkedin {
 .footer {
   padding: 0 20px;
   height: 80px;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   align-items: center;
+  align-content: center;
   font-family: 'Roboto';
   font-weight: normal;
   font-size: 30px;
@@ -531,10 +530,18 @@ li.contact-linkedin {
 
 .footer a:first-child {
   justify-self: start;
+  width: 120px;
+  height: 50px;
+  background: url("../assets/svg/rs.school.svg") no-repeat;
+  background-size: contain;
 }
 
 .footer a:last-child {
   justify-self: end;
+  width: 50px;
+  height: 50px;
+  background: url("../assets/svg/github.svg") no-repeat;
+  background-size: contain;
 }
 
 @media (max-width: 768px) {
@@ -558,7 +565,7 @@ li.contact-linkedin {
   }
 
   .menu.active {
-    opacity: 1;
+    opacity: 0.8;
     visibility: visible;
     height: auto;
   }
@@ -566,8 +573,107 @@ li.contact-linkedin {
   .menu-list {
     padding-top: 80px;
     flex-direction: column;
-    gap: 40px;
+    gap: 35px;
     align-items: flex-end;
   }
 
+  .hero-section {
+    flex-direction: column;
+  }
+
+  .photo-wrapper {
+    flex: 0 1 auto;
+  }
+
+  .contact-line {
+    display: none;
+  }
+
+  .title-wrapper { 
+    align-items: center;
+    padding: 50px 10px 50px 10px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 55px;
+  }
+
+  .title-wrapper h3 {
+    font-size: 35px;
+  }
+
+  .splitter-line {
+    display: none;
+  }
+
+  .section-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .right-side {
+    max-width: 100%;
+    min-width: auto;
+    padding: 0 20px;
+  }
+
+  .left-side {
+    order: 2;
+    padding: 20px 20px;
+    min-width: auto;
+  }
+
+  .footer {
+    font-size: 25px;
+  }
+
+  .footer a:first-child {
+    width: 100px;
+    height: 40px;
+  }
+  
+  .footer a:last-child {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 450px) {
+
+  .right-side {
+    padding: 0 10px;
+  }
+
+  .left-side {
+    padding: 20px 10px;
+  }
+
+  .about-section > p {
+    font-size: 16px;
+  }
+
+  .education-section li {
+    font-size: 16px;
+  }
+
+  .education-section .sub-li {
+    font-size: 16px;
+  }
+
+  .code-section {
+    overflow-x: auto;
+  }
+
+  .contact-link {
+    font-size: 16px;
+  }
+
+  .skills-wrapper > li {
+    font-size: 16px;
+  }
+
+  .languages-wrapper > li {
+    font-size: 16px;
+  }
 }

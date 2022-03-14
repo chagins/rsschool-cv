@@ -54,7 +54,8 @@ body {
   font-weight: normal;
 }
 
-.container{
+.container {
+  position: relative;
   margin: 0 auto;
   max-width: var(--max-width);
   display: flex;
@@ -65,9 +66,10 @@ body {
   -webkit-box-shadow: 0px 5px 5px 3px var(--shadow-color);
   -moz-box-shadow: 0px 5px 5px 3px var(--shadow-color);
   box-shadow: 0px 5px 5px 3px var(--shadow-color);
+  overflow-x: hidden;
 }
 
-.header{
+.header {
   padding: 0 20px;
   width: 100%;
   display: flex;
@@ -76,6 +78,7 @@ body {
   flex: 1 1 80px;
   background-color: var(--dark-color);
   border-radius: 10px 10px 0 0;
+  overflow-x: hidden;
 }
 
 .menu-list{
@@ -90,8 +93,8 @@ body {
   position: relative;
   display: inline-block;
   color: var(--light-color);
-  font-size: 18px;
-  transition: color 0.25s ease-out, transform 0.15s ease-out;
+  font-size: 17px;
+  transition: color 0.25s, transform 0.25s;
 }
 
 .menu-link:active {
@@ -108,7 +111,7 @@ body {
   left: 0;
   background-color: var(--blue-color);
   transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+  transition: transform 0.25s;
 }
 
 .menu-link:hover:after {
@@ -122,11 +125,11 @@ body {
 }
 
 .header-link {
-  transition: transform 0.15s ease-out;
+  transition: transform 0.25s;
 }
 
 .header-link:hover {
-  animation: icon-rotation 0.5s 1;
+  animation: icon-rotation 0.5s;
 }
 
 .header-link:active {
@@ -146,6 +149,68 @@ body {
   100% {
     transform: rotate(0deg);
   }
+}
+
+.burger {
+  display: none;
+  z-index: 2;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.burger span {
+  width: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.burger span,
+.burger span::before,
+.burger span::after {
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  display: block;
+  transition: transform 0.15s;
+  border-radius: 5px;
+  background-color: var(--light-color);
+}
+
+.burger:hover span,
+.burger:hover span::before,
+.burger:hover span::after {
+  background-color: var(--blue-color);
+}
+
+.burger span::before {
+  content: "";
+  top: -12px;
+  transition: top 0.15s 0.15s, transform 0.15s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.burger span:after{
+  content: "";
+  bottom: -12px;
+  transition: bottom 0.15s 0.15s, transform 0.15s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.burger.active span:before{
+  content: "";
+  top: 0px;
+  transform: rotate(45deg);
+  transition: top 0.15s, transform 0.15s 0.15s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.burger.active span:after{
+  content: "";
+  bottom: 0;
+  transform: rotate(-45deg);
+  transition: bottom 0.15s, transform 0.15s 0.15s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.burger.active span{
+  background: rgba(255, 255, 255, 0); 
 }
 
 .main {
@@ -291,7 +356,7 @@ h1 {
   font-size: 20px;
   line-height: 30px;
   color: var(--light-color);
-  transition: color 0.25s ease-out;
+  transition: color 0.25s;
 }
 
 .contact-link:hover {
@@ -410,7 +475,7 @@ li.contact-linkedin {
 .project {
   position: relative;
   filter: grayscale(100%);
-  transition: filter 1s ease-out, border 0.5s ease-out;
+  transition: filter 1s;
 }
 
 .project:hover{
@@ -430,7 +495,7 @@ li.contact-linkedin {
   background-color: var(--dark-color);
   cursor: pointer;
   user-select: none;
-  transition: opacity 0.3s ease-out;
+  transition: opacity 1s;
   border-radius: 10px;
   opacity: 0;
 }
@@ -440,7 +505,7 @@ li.contact-linkedin {
 }
 
 .code-section {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .footer {
@@ -459,7 +524,7 @@ li.contact-linkedin {
 }
 
 .footer > a:hover {
-  transition: filter 0.2s ease-out;
+  transition: filter 0.25s;
   filter: invert(39%) sepia(98%) saturate(1000%) hue-rotate(167deg) 
     brightness(98%) contrast(96%);
 }
@@ -470,4 +535,39 @@ li.contact-linkedin {
 
 .footer a:last-child {
   justify-self: end;
+}
+
+@media (max-width: 768px) {
+
+  .burger {
+    display: block;
+  }
+
+  .menu {
+    top: 5px;
+    right: 0;
+    z-index: 1;
+    width: 150px;
+    padding: 20px;
+    position: absolute;
+    background-color: var(--dark-color);
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+
+  .menu.active {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+  }
+
+  .menu-list {
+    padding-top: 80px;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-end;
+  }
+
 }

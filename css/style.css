@@ -30,7 +30,6 @@ html,body{
 	width: 100%;
 	font-size: 100%;
 	line-height: 1;
-	font-size: 14px;
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
@@ -52,6 +51,9 @@ body {
   padding: 5px;
   font-family: 'Roboto', sans-serif;
   font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  
 }
 
 .container {
@@ -66,7 +68,6 @@ body {
   -webkit-box-shadow: 0px 5px 5px 3px var(--shadow-color);
   -moz-box-shadow: 0px 5px 5px 3px var(--shadow-color);
   box-shadow: 0px 5px 5px 3px var(--shadow-color);
-  overflow-x: hidden;
 }
 
 .header {
@@ -93,7 +94,7 @@ body {
   position: relative;
   display: inline-block;
   color: var(--light-color);
-  font-size: 17px;
+  font-size: 16px;
   transition: color 0.25s, transform 0.25s;
 }
 
@@ -173,7 +174,7 @@ body {
   width: 40px;
   height: 3px;
   display: block;
-  transition: transform 0.15s;
+  transition: transform 0.5s;
   border-radius: 5px;
   background-color: var(--light-color);
 }
@@ -187,27 +188,27 @@ body {
 .burger span::before {
   content: "";
   top: -12px;
-  transition: top 0.15s 0.15s, transform 0.15s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: top 0.3s 0.3s, transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .burger span:after{
   content: "";
   bottom: -12px;
-  transition: bottom 0.15s 0.15s, transform 0.15s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: bottom 0.3s 0.3s, transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .burger.active span:before{
   content: "";
   top: 0px;
   transform: rotate(45deg);
-  transition: top 0.15s, transform 0.15s 0.15s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: top 0.3s, transform 0.3s 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .burger.active span:after{
   content: "";
   bottom: 0;
   transform: rotate(-45deg);
-  transition: bottom 0.15s, transform 0.15s 0.15s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: bottom 0.3s, transform 0.3s 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .burger.active span{
   background: rgba(255, 255, 255, 0); 
@@ -224,7 +225,9 @@ body {
 
 .photo-wrapper {
   padding: 10px 20px;
+  padding-top: 15px;
   height: 400px;
+  width: var(--left-side-width);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -313,6 +316,7 @@ h1 {
   flex-direction: column;
   gap: 20px;
   min-width: var(--left-side-width);
+  font-family: 'Roboto';
   background-color: var(--dark-color);
 }
 
@@ -325,7 +329,6 @@ h1 {
   height: fit-content;
   padding: 0px 10px;
   text-align: center;
-  font-family: "Roboto";
   font-weight: bold;
   font-size: 30px;
   line-height: 35px;
@@ -349,10 +352,6 @@ h1 {
 }
 
 .contact-link {
-  font-family: "Roboto";
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 30px;
   color: var(--light-color);
   transition: color 0.25s;
 }
@@ -384,10 +383,6 @@ li.contact-linkedin {
 .skills-wrapper > li {
   margin: 25px 0;
   padding-left: 39px;
-  font-family: "Roboto";
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 30px;
   color: var(--light-color);
   background: url("../assets/svg/icon_check.svg") 0 0 / 30px no-repeat;
 } 
@@ -395,10 +390,6 @@ li.contact-linkedin {
 .languages-wrapper > li {
   margin: 25px 0;
   padding-left: 39px;
-  font-family: "Roboto";
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 30px;
   color: var(--light-color);
   background: url("../assets/svg/icon_check.svg") 0 0 / 30px no-repeat;
 }
@@ -411,6 +402,7 @@ li.contact-linkedin {
   flex-direction: column;
   gap: 35px;
   min-width: var(--left-side-width);
+  font-family: "Roboto Condensed";
   background-color: var(--light-color);
 }
 
@@ -431,10 +423,6 @@ li.contact-linkedin {
 
 .about-section > p {
   margin-top: 20px;
-  font-family: "Roboto Condensed";
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 30px;
   color: var(--dark-font-color);
 }
 
@@ -445,10 +433,7 @@ li.contact-linkedin {
 .education-section li {
   margin-left: 25px;
   margin-top: 10px;
-  font-family: "Roboto Condensed";
   font-weight: bold;
-  font-size: 20px;
-  line-height: 30px;
   color: var(--dark-font-color);
   list-style: square;
 }
@@ -456,9 +441,7 @@ li.contact-linkedin {
 .education-section .sub-li {
   margin-left: 25px;
   list-style-type: none;
-  font-family: "Roboto Condensed";
   font-weight: normal;
-  font-size: 20px;
   color: var(--dark-font-color);
   list-style: circle;
 }
@@ -546,22 +529,26 @@ li.contact-linkedin {
 
 @media (max-width: 768px) {
 
+  body {
+    font-size: 18px;
+  }
+
   .burger {
     display: block;
   }
 
   .menu {
-    top: 5px;
+    top: 0;
     right: 0;
     z-index: 1;
     width: 150px;
-    padding: 20px;
+    height: 480px;
     position: absolute;
     background-color: var(--dark-color);
     border-radius: 10px;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s, visibility 0.3s;
+    transition: opacity 0.5s, visibility 0.5s;
   }
 
   .menu.active {
@@ -571,22 +558,46 @@ li.contact-linkedin {
   }
 
   .menu-list {
+    height: 480px;
+    padding: 20px;
     padding-top: 80px;
     flex-direction: column;
-    gap: 35px;
+    justify-content: space-between;
     align-items: flex-end;
   }
 
+  h1 {
+    font-size: 55px;
+  }
+
+  .title-wrapper h3 {
+    font-size: 38px;
+  }
+
+  .title-wrapper { 
+    padding-left: 35px;
+  }
+
+  .section-container {
+    gap: 35px;
+  }
+
+  .right-side {
+    max-width: auto;
+    min-width: auto;
+  }
+
+  .code-section {
+    font-size: 10px;
+    overflow-x: auto;
+  }
+
+}
+
+@media (max-width: 650px) {
+
   .hero-section {
     flex-direction: column;
-  }
-
-  .photo-wrapper {
-    flex: 0 1 auto;
-  }
-
-  .contact-line {
-    display: none;
   }
 
   .title-wrapper { 
@@ -595,16 +606,20 @@ li.contact-linkedin {
     text-align: center;
   }
 
-  h1 {
-    font-size: 55px;
+  .photo-wrapper {
+    padding: 30px 10px;
+    width: 100%;
+    justify-content: center;
+    flex: 0 1 auto;
   }
 
-  .title-wrapper h3 {
-    font-size: 35px;
-  }
-
-  .splitter-line {
+  .contact-line {
     display: none;
+  }
+
+  .hero-photo {
+    height: 100%;
+    width: auto;
   }
 
   .section-container {
@@ -614,14 +629,12 @@ li.contact-linkedin {
 
   .right-side {
     max-width: 100%;
-    min-width: auto;
     padding: 0 20px;
   }
 
   .left-side {
-    order: 2;
     padding: 20px 20px;
-    min-width: auto;
+    order: 2;
   }
 
   .footer {
@@ -636,44 +649,6 @@ li.contact-linkedin {
   .footer a:last-child {
     width: 40px;
     height: 40px;
-  }
-}
+  } 
 
-@media (max-width: 450px) {
-
-  .right-side {
-    padding: 0 10px;
-  }
-
-  .left-side {
-    padding: 20px 10px;
-  }
-
-  .about-section > p {
-    font-size: 16px;
-  }
-
-  .education-section li {
-    font-size: 16px;
-  }
-
-  .education-section .sub-li {
-    font-size: 16px;
-  }
-
-  .code-section {
-    overflow-x: auto;
-  }
-
-  .contact-link {
-    font-size: 16px;
-  }
-
-  .skills-wrapper > li {
-    font-size: 16px;
-  }
-
-  .languages-wrapper > li {
-    font-size: 16px;
-  }
 }

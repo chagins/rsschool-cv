@@ -6,11 +6,252 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="icon" href="./assets/favicon.ico">
   <link rel="stylesheet" href="./css/fonts.css">
+  <link rel="stylesheet" href="./css/theme.css">
   <link rel="stylesheet" href="./css/style.css">
   <title>Yaroslav Chagin CV</title>
 </head>
 <body>
-  
-  
+  <div class="container">
+    <header class="header">
+      <nav class="menu">
+        <ul class="menu-list">
+          <li><a class="menu-link" href="#about-section">about</a></li>
+          <li><a class="menu-link" href="#contcacts-section">contacts</a></li>
+          <li><a class="menu-link" href="#education-section">education</a></li>
+          <li><a class="menu-link" href="#skills-section">skills</a></li>
+          <li><a class="menu-link" href="#projects-section">projects</a></li>
+          <li><a class="menu-link" href="#code-section">code</a></li>
+          <li><a class="menu-link" href="#languages-section">languages</a></li>
+        </ul>
+      </nav>
+      <div class="links-wrapper">
+        <a class="header-link" href="https://t.me/chagins" title="telegram"> 
+          <img src="./assets/svg/telegram.svg" 
+            alt="telegram"
+            height=40 
+            width=40>
+        </a>
+        <a class="header-link" href="mailto://chagin_yav@hotmail.com" title="email"> 
+          <img src="./assets/svg/mail.svg" 
+            alt="mail"
+            height=40 
+            width=40>
+        </a>
+        <a class="header-link" href="https://www.linkedin.com/in/yaroslav-chagin" title="linkedin"> 
+          <img src="./assets/svg/linkedin.svg" 
+            alt="linkedin"
+            height=40 
+            width=40>
+        </a>
+      </div>
+      <div class="burger" title="menu">
+        <span></span>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero-section">
+        <div class="photo-wrapper">
+          <img class="hero-photo" src="./assets/img/photo.jpg" width=250 height=333 alt="hero-photo">
+          <div class="contact-line">
+            <div class="line-circle"></div>
+          </div>
+        </div>
+        <div class="title-wrapper">
+          <div class="hero-title">
+            <h1>yaroslav chagin</h1>
+            <h3>jr frontend developer</h3>
+          </div>
+          <div class="splitter-line"></div>
+        </div>
+      </section>
+      <div class="section-container">
+        <div class="left-side">
+          <section class="contcacts-section" id="contcacts-section">
+            <div class="header-left">
+              <div class="header-title">
+                <h2>contacts</h2>
+              </div>
+              <div class="header-line"></div>
+            </div>     
+            <ul class="contacts-wrapper">
+              <li class="contact-phone">
+                <a class = "contact-link" href="tel:+79824727083">+7 982 472 70 83</a>
+              </li>
+              <li class="contact-mail">
+                <a class = "contact-link" href="mailto://chagin_yav@hotmail.com">chagin_yav@hotmail.com</a>
+              </li>
+              <li class="contact-discord">
+                <a class = "contact-link" href="https://discordapp.com/users/878959404060405801">Yaroslav Chagin#1853</a>
+              </li>
+              <li class="contact-telegram">
+                <a class = "contact-link" href="https://t.me/chagins">@chagins</a>
+              </li>
+              <li class="contact-linkedin">
+                <a class = "contact-link" href="https://www.linkedin.com/in/yaroslav-chagin">Linkedin</a>
+              </li>
+            </ul>
+          </section>
+          <section class="skills-section" id="skills-section">
+            <div class="header-left">
+              <div class="header-title">
+                <h2>skills</h2>
+              </div>
+              <div class="header-line"></div>
+            </div>   
+            <ul class="skills-wrapper">
+              <li class="skill1">HTML</li>
+              <li class="skill2">CSS</li>
+              <li class="skill3">JavaScript</li>
+              <li class="skill4">GIT</li>
+              <li class="skill5">SQL</li>
+              <li class="skill6">JIRA</li>
+            </ul>
+          </section>
+          <section class="languages-section" id="languages-section">
+            <div class="header-left">
+              <div class="header-title">
+                <h2>languages</h2>
+              </div>
+              <div class="header-line"></div>
+            </div>   
+            <ul class="languages-wrapper">
+              <li class="language1">Russian</li>
+              <li class="language2">English: A1</li>
+            </ul>
+          </section>
+        </div>
+        <div class="right-side">
+          <section class="about-section" id="about-section">
+            <div class="header-right">
+              <h2>about me</h2>
+            </div>
+            <p>Hello! I'm 34 years old. I am very interested in information technology.</p>
+            <p>After graduating from the Perm National Research Polytechnic University, I worked in various positions: IT support specialist, system administrator, sql developer.</p>
+            <p>In the last three months, I discovered web development for myself. I was charmed by the possibility to transition from design to website or application and create something from scratch.</p>
+            <p><span>My goal is to become a professional front-end developer.</span></p>
+          </section>
+          <section class="education-section" id="education-section">
+            <div class="header-right">
+              <h2>education</h2>
+            </div>
+            <ul>
+              <li>Perm National Research Polytechnic University
+                <ul>
+                  <li class="sub-li">Bachelor Program in Informatics and Computer Engineering</li>
+                </ul>
+              </li>
+              <li>Harvard
+                <ul>
+                  <li class="sub-li">CS50</li>
+                </ul>
+              </li>
+              <li>Code Basics
+                <ul>
+                  <li class="sub-li">JavaScript for beginners</li>
+                  <li class="sub-li">HTML for beginners</li>
+                  <li class="sub-li">CSS for beginners</li>
+                </ul>
+              </li>
+              <li>RS School
+                <ul>
+                  <li class="sub-li">JavaScript/Front-end. Stage 0 (2022)</li>
+                </ul>
+              </li>
+              <li>Udemy
+                <ul>
+                  <li class="sub-li">WEB developer 2021</li>
+                  <li class="sub-li">Oracle Database 12c SQL Certified Associate 1Z0-071</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <section class="projects-section" id="projects-section">
+            <div class="header-right">
+              <h2>projects</h2>
+            </div>
+            <div class="projects-wrapper">
+              <div class="project" title="cv">
+                <a href="https://chagins.github.io/rsschool-cv/">
+                  <img src="./assets/img/project-cv.jpg" alt="project-cv" width="220" height="220">
+                  <p class="open">open</p>
+                </a>
+                
+              </div>
+              <div class="project" title="photographer's portfolio">
+                <a href="https://chagins.github.io/rs-school_stage0/portfolio/">
+                  <img src="./assets/img/project-portfolio.jpg" alt="project-portfolio" width="220" height="220">
+                  <p class="open">open</p>
+                </a>
+              </div>
+              <div class="project" title="custom video player">
+                <a href="https://chagins.github.io/rs-school_stage0/custom-video/">
+                  <img src="./assets/img/project-video.jpg" alt="project-video" width="220" height="220">
+                  <p class="open">open</p>
+                </a>
+              </div>
+              <div class="project" title="movie app">
+                <a href="https://chagins.github.io/rs-school_stage0/movie-app/">
+                  <img src="./assets/img/project-movie.jpg" alt="project-movie" width="220" height="220">
+                  <p class="open">open</p>
+                </a>
+              </div>
+              <div class="project" title="memory game">
+                <a href="https://chagins.github.io/rs-school_stage0/memory-game/">
+                  <img src="./assets/img/project-game.jpg" alt="project-game" width="220" height="220">
+                  <p class="open">open</p>
+                </a>
+              </div>
+            </div>
+          </section>
+          <section class="code-section" id="code-section">
+            <div class="header-right">
+              <h2>code example</h2>
+            </div>
+            <pre>
+              <code data-language = "javascript">
+// Roman to Integer
+/**
+  * @param {string} s
+  * @return {number}
+  */
+let romanToInt = function (s) {
+  const ROMAN = new Map([
+    ["I", 1],
+    ["V", 5],
+    ["X", 10],
+    ["L", 50],
+    ["C", 100],
+    ["D", 500],
+    ["M", 1000],
+  ]);
+
+  let date = 0;
+  for (let i = 0; i &lt; s.length; i++) {
+
+    const currentNum = ROMAN.get(s[i]);
+    const nextNum = ROMAN.get(s[i + 1]);
+
+    date += 
+      (i &lt; s.length - 1 && currentNum &lt; nextNum) 
+      ? -currentNum 
+      : currentNum;
+  }
+
+  return date;
+};                
+              </code>
+            </pre>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <a href="https://rs.school/js/" title="Course JavaScript/Front-end"> </a>
+      <p>2022</p>
+      <a href="https://github.com/chagins" title="Author's github"> </a>
+    </footer>
+  </div>
+  <script src="./js/rainbow-custom.min.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 </html>

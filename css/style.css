@@ -589,7 +589,10 @@ li.contact-linkedin {
 
   .code-section {
     font-size: 10px;
-    overflow-x: auto;
+  }
+
+  .code-section pre {
+    overflow-x: scroll;
   }
 
 }
@@ -633,6 +636,7 @@ li.contact-linkedin {
   }
 
   .left-side {
+    min-width: auto;
     padding: 20px 20px;
     order: 2;
   }
